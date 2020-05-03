@@ -20,10 +20,16 @@ public class poketmonster {
 		
 	}
 	
-	public void showstat() 
+	public void showstat() /// afficher les carateristique du pokemon
 	{
 		System.out.println("les stat de "+this.getName()+"\n"+" sa vie "+this.getHP()+"\n"+" l'experiance:"+this.getXP()+"\n"+" sont attack:"+this.getAttack()+"\n"+" ça defence:"+this.getDefense()+"\n"+" le level:"+this.getLevel()+"\n");
 	}
+	
+	private void combat(poketmonster monster) 
+	{
+		System.out.println(this.getName()+"va combatre"+monster.getName());
+	}
+	
 	
 	private int getLevel() {
 		return Level;

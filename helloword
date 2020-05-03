@@ -1,10 +1,14 @@
 package openclassroom;
+import poketmonster;
 
 public class helloword {
 
 	public static void main(String[] args) {
 		poketmonster pikachu = new poketmonster("pika");
+		poketmonster miaous = new poketmonster("snowball");
 		pikachu.showstat();
+		miaous.showstat();
+		pikachu.combat(miaous);
 	
 
 }
