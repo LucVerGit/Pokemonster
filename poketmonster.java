@@ -1,6 +1,6 @@
-package openclassroom;
+package apppoket;
 
-public class poketmonster {
+public class pokemonster {
 	private String Name;
 	private float HP;
 	private int XP;
@@ -8,7 +8,7 @@ public class poketmonster {
 	private float Defense;
 	private int Level;
 	
-	public poketmonster(String name)
+	public pokemonster(String name)
 	{
 		this.setName(name);
 		this.setHP(100);
@@ -25,9 +25,12 @@ public class poketmonster {
 		System.out.println("les stat de "+this.getName()+"\n"+" sa vie "+this.getHP()+"\n"+" l'experiance:"+this.getXP()+"\n"+" sont attack:"+this.getAttack()+"\n"+" ça defence:"+this.getDefense()+"\n"+" le level:"+this.getLevel()+"\n");
 	}
 	
-	private void combat(poketmonster monster) 
+	public void combat(pokemonster monster) 
 	{
-		System.out.println(this.getName()+"va combatre"+monster.getName());
+		System.out.println(this.getName()+" va combatre"+monster.getName());
+		monster.setHP(monster.getHP() - this.getAttack());
+		this.setXP(getXP()+1);
+		
 	}
 	
 	
